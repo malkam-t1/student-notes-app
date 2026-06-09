@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".features.backup.BackupActivity" />
+        <activity android:name=".features.statistics.StatisticsActivity" />
+        <activity android:name=".features.review.ReviewActivity" />
+        <activity android:name=".features.tags.TagActivity" />
+        <activity android:name=".features.trash.TrashActivity" />
+        <activity android:name=".features.archive.ArchiveActivity" />
+        <activity android:name=".features.categories.CategoryActivity" />
+        <activity android:name=".features.detail.NoteDetailActivity" />
+        <activity android:name=".features.editor.NoteEditorActivity" />
+        <activity android:name=".features.home.HomeActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
